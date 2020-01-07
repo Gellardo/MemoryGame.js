@@ -169,58 +169,58 @@ class Level {
 // Possible lists
 let lists = {
     'Tiere': [
-        {'image': 'bird.png', 'video': 'bird.mp4'},
-        {'image': 'butterfly.png', 'video': 'butterfly.mp4'},
-        {'image': 'cat.png', 'video': 'cat.mp4'},
-        {'image': 'cow.png', 'video': 'cow.mp4'},
-        {'image': 'crocodile.png', 'video': 'crocodile.mp4'},
-        {'image': 'dog.png', 'video': 'dog.mp4'},
-        {'image': 'donkey.png', 'video': 'donkey.mp4'},
-        {'image': 'elephant.png', 'video': 'elephant.mp4'},
-        {'image': 'frog.png', 'video': 'frog.mp4'},
-        {'image': 'giraffe.png', 'video': 'giraffe.mp4'},
-        {'image': 'goat.png', 'video': 'goat.mp4'},
-        {'image': 'horse.png', 'video': 'horse.mp4'},
-        {'image': 'lion.png', 'video': 'lion.mp4'},
-        {'image': 'monkey.png', 'video': 'monkey.mp4'},
-        {'image': 'mouse.png', 'video': 'mouse.mp4'},
-        {'image': 'pig.png', 'text': 'Schwein'},
-        {'image': 'rabbit.png', 'video': 'rabbit.mp4'},
-        {'image': 'sheep.png', 'video': 'sheep.mp4'},
-        {'image': 'snake.png', 'video': 'snake.mp4'},
-        {'image': 'spider.png', 'video': 'spider.mp4'}
+        { 'image': 'bird.png', 'video': 'bird.mp4' },
+        { 'image': 'butterfly.png', 'video': 'butterfly.mp4' },
+        { 'image': 'cat.png', 'video': 'cat.mp4' },
+        { 'image': 'cow.png', 'video': 'cow.mp4' },
+        { 'image': 'crocodile.png', 'video': 'crocodile.mp4' },
+        { 'image': 'dog.png', 'video': 'dog.mp4' },
+        { 'image': 'donkey.png', 'video': 'donkey.mp4' },
+        { 'image': 'elephant.png', 'video': 'elephant.mp4' },
+        { 'image': 'frog.png', 'video': 'frog.mp4' },
+        { 'image': 'giraffe.png', 'video': 'giraffe.mp4' },
+        { 'image': 'goat.png', 'video': 'goat.mp4' },
+        { 'image': 'horse.png', 'video': 'horse.mp4' },
+        { 'image': 'lion.png', 'video': 'lion.mp4' },
+        { 'image': 'monkey.png', 'video': 'monkey.mp4' },
+        { 'image': 'mouse.png', 'video': 'mouse.mp4' },
+        { 'image': 'pig.png', 'text': 'Schwein' },
+        { 'image': 'rabbit.png', 'video': 'rabbit.mp4' },
+        { 'image': 'sheep.png', 'video': 'sheep.mp4' },
+        { 'image': 'snake.png', 'video': 'snake.mp4' },
+        { 'image': 'spider.png', 'video': 'spider.mp4' }
     ],
     'Alphabet': [
-        {'image': 'a.png', 'video': 'a.mp4'},
-        {'image': 'b.png', 'video': 'b.mp4'},
-        {'image': 'c.png', 'video': 'c.mp4'},
-        {'image': 'd.png', 'video': 'd.mp4'},
-        {'image': 'e.png', 'video': 'e.mp4'},
-        {'image': 'f.png', 'video': 'f.mp4'},
-        {'image': 'g.png', 'video': 'g.mp4'},
-        {'image': 'h.png', 'video': 'h.mp4'},
-        {'image': 'i.png', 'video': 'i.mp4'},
-        {'image': 'j.png', 'video': 'j.mp4'},
-        {'image': 'k.png', 'video': 'k.mp4'},
-        {'image': 'l.png', 'video': 'l.mp4'},
-        {'image': 'm.png', 'video': 'm.mp4'},
-        {'image': 'n.png', 'video': 'n.mp4'},
-        {'image': 'o.png', 'video': 'o.mp4'},
-        {'image': 'p.png', 'video': 'p.mp4'},
-        {'image': 'q.png', 'video': 'q.mp4'},
-        {'image': 'r.png', 'video': 'r.mp4'},
-        {'image': 's.png', 'video': 's.mp4'},
-        {'image': 't.png', 'video': 't.mp4'},
-        {'image': 'u.png', 'video': 'u.mp4'},
-        {'image': 'v.png', 'video': 'v.mp4'},
-        {'image': 'w.png', 'video': 'w.mp4'},
-        {'image': 'x.png', 'video': 'x.mp4'},
-        {'image': 'y.png', 'video': 'y.mp4'},
-        {'image': 'z.png', 'video': 'z.mp4'}
+        { 'image': 'a.png', 'video': 'a.mp4' },
+        { 'image': 'b.png', 'video': 'b.mp4' },
+        { 'image': 'c.png', 'video': 'c.mp4' },
+        { 'image': 'd.png', 'video': 'd.mp4' },
+        { 'image': 'e.png', 'video': 'e.mp4' },
+        { 'image': 'f.png', 'video': 'f.mp4' },
+        { 'image': 'g.png', 'video': 'g.mp4' },
+        { 'image': 'h.png', 'video': 'h.mp4' },
+        { 'image': 'i.png', 'video': 'i.mp4' },
+        { 'image': 'j.png', 'video': 'j.mp4' },
+        { 'image': 'k.png', 'video': 'k.mp4' },
+        { 'image': 'l.png', 'video': 'l.mp4' },
+        { 'image': 'm.png', 'video': 'm.mp4' },
+        { 'image': 'n.png', 'video': 'n.mp4' },
+        { 'image': 'o.png', 'video': 'o.mp4' },
+        { 'image': 'p.png', 'video': 'p.mp4' },
+        { 'image': 'q.png', 'video': 'q.mp4' },
+        { 'image': 'r.png', 'video': 'r.mp4' },
+        { 'image': 's.png', 'video': 's.mp4' },
+        { 'image': 't.png', 'video': 't.mp4' },
+        { 'image': 'u.png', 'video': 'u.mp4' },
+        { 'image': 'v.png', 'video': 'v.mp4' },
+        { 'image': 'w.png', 'video': 'w.mp4' },
+        { 'image': 'x.png', 'video': 'x.mp4' },
+        { 'image': 'y.png', 'video': 'y.mp4' },
+        { 'image': 'z.png', 'video': 'z.mp4' }
     ],
     'IT': [
-        {'text': 'Javascript'},
-        {'text': 'Scala'}
+        { 'text': 'Javascript' },
+        { 'text': 'Scala' }
     ]
 };
 
@@ -337,9 +337,8 @@ class MemoryGame {
         this.categoryCtrls = document.getElementById('categories')
         this.currentLvl = null
         this.levelSize = 2; // minimum number of cards
-        this.updateCategory(this.categoryCtrls.childNodes[1].firstChild);
-        this.updateSize(this.levelCtrls.childNodes[1].firstChild);
-
+        this.updateCategory(document.getElementById('firstCategory'));
+        this.updateSize(document.getElementById('firstLevel'));
         this.start();
     }
 
@@ -355,22 +354,23 @@ class MemoryGame {
     }
 
     updateSize(element, pairs) {
+        console.log(element);
         for (let i = 0; i < this.levelCtrls.children.length; i++) {
-            this.levelCtrls.children[i].className = ''
+            this.levelCtrls.children[i].className = this.levelCtrls.children[i].className.replace('selected', '').trim();
         }
-        element.parentElement.className = 'selected';
+        element.className = element.className + ' selected';
         if (pairs)
             this.levelSize = pairs * 2;
         else
             this.levelSize = element.textContent * 2;
-        this.start()
+        this.start();
     }
 
     updateCategory(element, newCategory) {
         for (let i = 0; i < this.categoryCtrls.children.length; i++) {
-            this.categoryCtrls.children[i].className = ''
+            this.categoryCtrls.children[i].className = this.categoryCtrls.children[i].className.replace('selected', '').trim();
         }
-        element.parentElement.className = 'selected';
+        element.className = element.className + ' selected';
         if (newCategory)
             this.levelCategory = newCategory;
         else
