@@ -216,7 +216,10 @@ let lists = {
         { 'image': 'w.png', 'video': 'w.mp4' },
         { 'image': 'x.png', 'video': 'x.mp4' },
         { 'image': 'y.png', 'video': 'y.mp4' },
-        { 'image': 'z.png', 'video': 'z.mp4' }
+        { 'image': 'ae.png', 'video': 'ae.mp4' },
+        { 'image': 'oe.png', 'video': 'oe.mp4' },
+        { 'image': 'ue.png', 'video': 'ue.mp4' },
+        { 'image': 'sz.png', 'video': 'sz.mp4' },
     ],
     'IT': [
         { 'text': 'Javascript' },
