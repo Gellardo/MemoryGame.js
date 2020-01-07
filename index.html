@@ -1,42 +1,50 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-        "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
+
 <head>
     <title>DGS Memory</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" type="text/css" href="MemoryGame.css">
 </head>
+
 <body>
-<h1>DGS Memory</h1>
-<p id="game-info">&nbsp;</p>
+    <div id="navbar">
 
-<ul id="categories">
-    <li class="selected"><a href="javascript:" onclick="game.updateCategory(this, 'Tiere')">Tiere</a></li>
-    <li><a href="javascript:" onclick="game.updateCategory(this, 'Alphabet')">Alphabet</a></li>
-    <li><a href="javascript:" onclick="game.updateCategory(this)">IT</a></li>
-    <li><a id="addCategories" href="javascript:"
-           onclick="alert('Sorry, leider gibt es noch keinen automatischen Weg, neue Kategorien anzulegen.'
-           +' Aber du kannst mir gerne unter agnes.koehler@codecentric.de eine E-Mail schicken mit Videos und Bildern!')"> + </a></li>
-</ul>
+        <span class="heading">Sign together: Memory</span>
+        <span id="levels">
+            <div>Anzahl Paare:</div>
+            <a id="firstLevel" class="button selected" href="javascript:" onclick="game.updateSize(this, 2)">2</a>
+            <a class="button" href="javascript:" onclick="game.updateSize(this)">4</a>
+            <a class="button" href="javascript:" onclick="game.updateSize(this)">8</a>
+            <a class="button" href="javascript:" onclick="game.updateSize(this)">20</a>
+        </span>
 
+        <span id="categories">
+            <div>Kategorie:</div>
+            <a id="firstCategory" class="button" href="javascript:"
+                onclick="game.updateCategory(this, 'Tiere')">Tiere</a class="button">
+            <a class="button" href="javascript:" onclick="game.updateCategory(this, 'Alphabet')">Alphabet</a
+                class="button">
+            <a class="button" href="javascript:" onclick="game.updateCategory(this)">IT</a class="button">
+            <a class="button" id="addCategories" href="javascript:"
+                onclick="alert('Sorry, leider gibt es noch keinen automatischen Weg, neue Kategorien anzulegen.'
+               +' Aber du kannst mir gerne unter agnes.koehler@codecentric.de eine E-Mail schicken mit Videos und Bildern!')"> + </a>
+        </span>
+    </div>
+    <div class="main">
+        <p id="game-info">&nbsp;</p>
+        <div id="playfield-wrapper">&nbsp;<div class="win-text">GEWONNEN!!</div>
+        </div>
 
-<ul id="levels">
-    <li><a href="javascript:" onclick="game.updateSize(this, 2)">2</a></li>
-    <li><a href="javascript:" onclick="game.updateSize(this)">4</a></li>
-    <li><a href="javascript:" onclick="game.updateSize(this)">8</a></li>
-    <li class="selected"><a href="javascript:" onclick="game.updateSize(this)">20</a></li>
-</ul>
-
-<div id="playfield-wrapper">&nbsp;<div class="win-text">GEWONNEN!!</div>
-</div>
-
-<script type="text/javascript" src="Event.js"></script>
-<script type="text/javascript" src="MemoryGame.js"></script>
-<script type="text/javascript">
-    "use strict";
-    var evt = new Event(),
-        game = new MemoryGame(evt);
-</script>
-
+        <script type="text/javascript" src="Event.js"></script>
+        <script type="text/javascript" src="MemoryGame.js"></script>
+        <script type="text/javascript">
+            "use strict";
+            var evt = new Event(),
+                game = new MemoryGame(evt);
+        </script>
+    </div>
+    <div id="footer">© 2020 <img style="margin-left: -8px" class="logo" src="./assets/logo.png"></div>
 </body>
+
 </html>
