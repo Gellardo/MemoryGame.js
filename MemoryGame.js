@@ -90,6 +90,7 @@ class Level {
         for (let i = 0; i < (this.cards.length); i = i + 1) {
             this.cards[i].draw(k, this.playfield);
             k++;
+           
         }
         this.playfieldWrapper.replaceChild(this.playfield, this.playfieldWrapper.childNodes[0]);
     }
