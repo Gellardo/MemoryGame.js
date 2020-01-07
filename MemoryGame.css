@@ -314,10 +314,10 @@ div {
 /* media queries to adapt to screen size */
 
 @media (min-width: 1000px) {
-    .card {
-        width: 115px;
-        height: 115px;
+    #playfield-wrapper  {
+        max-width: 900px;
     }
+
     .play-field {
         max-width: 100%;
         margin: 20px;
