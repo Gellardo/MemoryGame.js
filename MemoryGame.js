@@ -223,8 +223,13 @@ let lists = {
         { 'image': 'sz.png', 'video': 'sz.mp4' },
     ],
     'IT': [
-        { 'text': 'Javascript' },
-        { 'text': 'Scala' }
+        { 'image': 'festplatte.png', 'video': 'festplatte.mp4' },
+        { 'image': 'bildschirm.png', 'video': 'bildschirm.mp4' },
+        { 'image': 'computer.png', 'video': 'computer.mp4' },
+        { 'image': 'computerspiel.png', 'video': 'computerspiel.mp4' },
+        { 'image': 'email.png', 'video': 'email.mp4' },
+        { 'image': 'google.png', 'video': 'google.mp4' },
+        { 'image': 'google.png', 'video': 'google.mp4' }
     ]
 };
 
