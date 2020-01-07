@@ -114,7 +114,8 @@ div {
     display: inline-block;
     padding: 0;
     opacity: 1;
-    position: relative
+    position: relative;
+    max-width: 550px;
 }
 
 .win-text {
@@ -143,7 +144,6 @@ div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 460px;
     margin: 10px;
     padding: 0;
     border-collapse: collapse;
@@ -151,8 +151,8 @@ div {
 }
 
 .card {
-    width: 115px;
-    height: 115px;
+    width: 180px;
+    height: 180px;
     font-size: 64px;
     line-height: 70px;
     cursor: default;
@@ -313,13 +313,14 @@ div {
 
 /* media queries to adapt to screen size */
 
-@media (min-width: 1500px) {
+@media (min-width: 1000px) {
     .card {
-        width: 180px;
-        height: 180px;
+        width: 115px;
+        height: 115px;
     }
     .play-field {
         max-width: 100%;
         margin: 20px;
     }
 }
+
