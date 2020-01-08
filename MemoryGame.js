@@ -228,6 +228,17 @@ let lists = {
         { 'image': 'computer.png', 'video': 'computer.mp4' },
         { 'image': 'computerspiel.png', 'video': 'computerspiel.mp4' },
         { 'image': 'email.png', 'video': 'email.mp4' },
+        { 'image': 'computermaus.png', 'video': 'maus_computer.mp4' },
+        { 'image': 'dokumentation.png', 'video': 'dokumentation.mp4' },
+        { 'image': 'firewall.png', 'video': 'firewall.mp4' },
+        { 'image': 'kaffee.png', 'video': 'kaffee.mp4' },
+        { 'image': 'funktion.png', 'video': 'funktion.mp4' },
+        { 'image': 'informatik.png', 'video': 'informatik.mp4' },
+        { 'image': 'integration.png', 'video': 'integration.mp4' },
+        { 'image': 'laptop.png', 'video': 'laptop.mp4' },
+        { 'image': 'netzwerk.png', 'video': 'netzwerk.mp4' },
+        { 'image': 'pizza.png', 'video': 'pizza.mp4' },
+        { 'image': 'projekt.png', 'video': 'projekt.mp4' },
         { 'image': 'google.png', 'video': 'google.mp4' }
     ]
 };
