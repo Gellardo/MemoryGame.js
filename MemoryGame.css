@@ -115,7 +115,7 @@ div {
     padding: 0;
     opacity: 1;
     position: relative;
-    max-width: 550px;
+    width: calc(100vw * 0.85);
 }
 
 .win-text {
@@ -144,15 +144,15 @@ div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 10px;
+    margin: 20px;
     padding: 0;
     border-collapse: collapse;
     opacity: 1
 }
 
 .card {
-    width: 180px;
-    height: 180px;
+    width: calc(100vw * 0.4);
+    height: calc(100vw * 0.4);
     font-size: 64px;
     line-height: 70px;
     cursor: default;
@@ -314,13 +314,9 @@ div {
 /* media queries to adapt to screen size */
 
 @media (min-width: 1000px) {
-    #playfield-wrapper  {
-        max-width: 900px;
-    }
-
-    .play-field {
-        max-width: 100%;
-        margin: 20px;
+    .card {
+        width: calc(100vw * 0.2);
+        height: calc(100vw * 0.2);
     }
 }
 
