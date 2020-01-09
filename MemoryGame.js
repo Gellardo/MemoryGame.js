@@ -217,6 +217,7 @@ let lists = {
         { 'image': 'w.png', 'video': 'w.mp4' },
         { 'image': 'x.png', 'video': 'x.mp4' },
         { 'image': 'y.png', 'video': 'y.mp4' },
+        { 'image': 'sch.png', 'video': 'sch.mp4' },
         { 'image': 'ae.png', 'video': 'ae.mp4' },
         { 'image': 'oe.png', 'video': 'oe.mp4' },
         { 'image': 'ue.png', 'video': 'ue.mp4' },
@@ -228,7 +229,17 @@ let lists = {
         { 'image': 'computer.png', 'video': 'computer.mp4' },
         { 'image': 'computerspiel.png', 'video': 'computerspiel.mp4' },
         { 'image': 'email.png', 'video': 'email.mp4' },
-        { 'image': 'google.png', 'video': 'google.mp4' },
+        { 'image': 'computermaus.png', 'video': 'maus_computer.mp4' },
+        { 'image': 'dokumentation.png', 'video': 'dokumentation.mp4' },
+        { 'image': 'firewall.png', 'video': 'firewall.mp4' },
+        { 'image': 'kaffee.png', 'video': 'kaffee.mp4' },
+        { 'image': 'funktion.png', 'video': 'funktion.mp4' },
+        { 'image': 'informatik.png', 'video': 'informatik.mp4' },
+        { 'image': 'integration.png', 'video': 'integration.mp4' },
+        { 'image': 'laptop.png', 'video': 'laptop.mp4' },
+        { 'image': 'netzwerk.png', 'video': 'netzwerk.mp4' },
+        { 'image': 'pizza.png', 'video': 'pizza.mp4' },
+        { 'image': 'projekt.png', 'video': 'projekt.mp4' },
         { 'image': 'google.png', 'video': 'google.mp4' }
     ]
 };
