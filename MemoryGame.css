@@ -37,6 +37,10 @@ div {
     font-weight: bold;
 }
 
+#footer a {
+    color: #fff;
+}
+
 #navbar {
     overflow: hidden;
     background-color: #1f4e5b;
