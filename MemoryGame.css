@@ -155,8 +155,8 @@ div {
 }
 
 .card {
-    width: calc(100vw * 0.4);
-    height: calc(100vw * 0.4);
+    width: calc(100vw * 0.25);
+    height: calc(100vw * 0.25);
     font-size: 64px;
     line-height: 70px;
     cursor: default;
@@ -333,8 +333,8 @@ div {
 
 @media (min-width: 1000px) {
     .card {
-        width: calc(100vw * 0.2);
-        height: calc(100vw * 0.2);
+        width: calc(100vw * 0.1);
+        height: calc(100vw * 0.1);
     }
 }
 
