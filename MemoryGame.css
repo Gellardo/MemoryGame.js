@@ -336,5 +336,8 @@ div {
         width: calc(100vw * 0.1);
         height: calc(100vw * 0.1);
     }
+    #playfield-wrapper {
+        width: calc(100vw * 0.7);
+    }
 }
 
