@@ -4,7 +4,7 @@
 <head>
     <title>DGS Memory</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" type="text/css" href="MemoryGame.css">  
+    <link rel="stylesheet" type="text/css" href="MemoryGame.css">
 </head>
 
 <body>
@@ -13,19 +13,18 @@
         <span class="heading"><img style="margin-left: -8px" class="logo" src="./assets/signtogether_centered.png"></span>
         <span id="levels">
             <div>Anzahl Paare:</div>
-            <a id="firstLevel" class="button selected" href="javascript:" onclick="game.updateSize(this, 3)">3</a>
-            <a class="button" href="javascript:" onclick="game.updateSize(this)">6</a>
-            <a class="button" href="javascript:" onclick="game.updateSize(this)">9</a>
-            <a class="button" href="javascript:" onclick="game.updateSize(this)">12</a>
+<!--            <a id="firstLevel" class="button selected" href="javascript:" onclick="game.updateSize(this, 3)">3</a>-->
+<!--            <a class="button" href="javascript:" onclick="game.updateSize(this)">6</a>-->
+<!--            <a class="button" href="javascript:" onclick="game.updateSize(this)">9</a>-->
+<!--            <a class="button" href="javascript:" onclick="game.updateSize(this)">12</a>-->
         </span>
 
         <span id="categories">
             <div>Kategorie:</div>
-            <a id="firstCategory" class="button" href="javascript:"
-                onclick="game.updateCategory(this, 'Tiere')">Tiere</a class="button">
-            <a class="button" href="javascript:" onclick="game.updateCategory(this, 'Alphabet')">Alphabet</a
-                class="button">
-            <a class="button" href="javascript:" onclick="game.updateCategory(this)">IT</a class="button">
+<!--            <a id="firstCategory" class="button" href="javascript:"-->
+<!--                onclick="game.updateCategory(this, 'Tiere')">Tiere</a>-->
+<!--            <a class="button" href="javascript:" onclick="game.updateCategory(this, 'Alphabet')">Alphabet</a>-->
+<!--            <a class="button" href="javascript:" onclick="game.updateCategory(this)">IT</a>-->
             <a class="button" id="addCategories" href="javascript:"
                 onclick="alert('Sorry, leider gibt es noch keinen automatischen Weg, neue Kategorien anzulegen.'
                +' Aber du kannst mir gerne unter agnes.koehler@codecentric.de eine E-Mail schicken mit Videos und Bildern!')"> + </a>
@@ -36,12 +35,24 @@
         <div id="playfield-wrapper">&nbsp;<div class="win-text">GEWONNEN!!</div>
         </div>
 
-        <script type="text/javascript" src="Event.js"></script>
-        <script type="text/javascript" src="MemoryGame.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script type="text/javascript" src="js/Event.js"></script>
+        <script type="text/javascript" src="js/MemoryGame.js"></script>
+        <script type="text/javascript" src="js/lists.js"></script>
         <script type="text/javascript">
             "use strict";
-            var evt = new Event(),
-                game = new MemoryGame(evt);
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    message: 'Hello Vue!'
+                }
+            });
+            let category;
+            if (window.location.search) {
+                category = window.location.search.replace("?", "");
+            }
+            let evt = new Event(),
+                game = new MemoryGame(evt, category, lists);
         </script>
       <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
     </div>

@@ -272,7 +272,7 @@ class Card {
 }
 
 class MemoryGame {
-    constructor(evt, category) {
+    constructor(evt, category, lists) {
         this.evt = evt;
         this.lvlNum = 0;
         this.info = document.getElementById('game-info');
@@ -280,6 +280,8 @@ class MemoryGame {
         this.categoryCtrls = document.getElementById('categories');
         this.currentLvl = null;
         this.levelSize = 2; // minimum number of cards
+        this.lists = lists;
+        this.refreshControls();
         this.updateCategory(document.getElementById('firstCategory'));
         this.updateSize(document.getElementById('firstLevel'));
         this.start();
@@ -287,7 +289,7 @@ class MemoryGame {
 
     start() {
         let matches = 2;
-        this.currentLvl = new Level(evt, this.levelSize, matches, this.levelCategory, lists[this.levelCategory]);
+        this.currentLvl = new Level(evt, this.levelSize, matches, this.levelCategory, this.lists[this.levelCategory]);
         this.currentLvl.onwin = function (clicks, prc) {
             this.info.innerHTML = 'Du hast alle Paare mit nur <strong>' + clicks + '</strong> Klicks gefunden.' +
                 ' Das entspricht einer Effizienz von <strong>' + prc + '%</strong>';
@@ -320,4 +322,26 @@ class MemoryGame {
             this.levelCategory = element.textContent;
         this.start()
     };
+
+    refreshControls() {
+        let text = this.categoryCtrls.firstChild;
+        let addNew = this.categoryCtrls.lastChild;
+        while( this.categoryCtrls.hasChildNodes() ){
+            this.categoryCtrls.removeChild(this.categoryCtrls.lastChild);
+        }
+
+        this.categoryCtrls.appendChild(text);
+        for (let cat in this.lists) {
+            let a = document.createElement('a');
+            a.className = 'button';
+            a.href = 'javascript:';
+            a.onclick = function () {
+                game.updateCategory(a, cat);
+            };
+            a.textContent = cat;
+            this.categoryCtrls.appendChild(a);
+        }
+        this.categoryCtrls.lastChild.className += " firstCategory";
+        this.categoryCtrls.appendChild(addNew);
+    }
 }
