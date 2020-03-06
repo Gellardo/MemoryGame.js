@@ -90,7 +90,7 @@ class Level {
         for (let i = 0; i < (this.cards.length); i = i + 1) {
             this.cards[i].draw(k, this.playfield);
             k++;
-           
+
         }
         this.playfieldWrapper.replaceChild(this.playfield, this.playfieldWrapper.childNodes[0]);
     }
@@ -166,83 +166,6 @@ class Level {
         }
     }
 }
-
-// Possible lists
-let lists = {
-    'Tiere': [
-        { 'image': 'bird.png', 'video': 'bird.mp4' },
-        { 'image': 'butterfly.png', 'video': 'butterfly.mp4' },
-        { 'image': 'cat.png', 'video': 'cat.mp4' },
-        { 'image': 'cow.png', 'video': 'cow.mp4' },
-        { 'image': 'crocodile.png', 'video': 'crocodile.mp4' },
-        { 'image': 'dog.png', 'video': 'dog.mp4' },
-        { 'image': 'donkey.png', 'video': 'donkey.mp4' },
-        { 'image': 'elephant.png', 'video': 'elephant.mp4' },
-        { 'image': 'frog.png', 'video': 'frog.mp4' },
-        { 'image': 'giraffe.png', 'video': 'giraffe.mp4' },
-        { 'image': 'goat.png', 'video': 'goat.mp4' },
-        { 'image': 'horse.png', 'video': 'horse.mp4' },
-        { 'image': 'lion.png', 'video': 'lion.mp4' },
-        { 'image': 'monkey.png', 'video': 'monkey.mp4' },
-        { 'image': 'mouse.png', 'video': 'mouse.mp4' },
-        { 'image': 'pig.png', 'text': 'Schwein' },
-        { 'image': 'rabbit.png', 'video': 'rabbit.mp4' },
-        { 'image': 'sheep.png', 'video': 'sheep.mp4' },
-        { 'image': 'snake.png', 'video': 'snake.mp4' },
-        { 'image': 'spider.png', 'video': 'spider.mp4' }
-    ],
-    'Alphabet': [
-        { 'image': 'a.png', 'video': 'a.mp4' },
-        { 'image': 'b.png', 'video': 'b.mp4' },
-        { 'image': 'c.png', 'video': 'c.mp4' },
-        { 'image': 'd.png', 'video': 'd.mp4' },
-        { 'image': 'e.png', 'video': 'e.mp4' },
-        { 'image': 'f.png', 'video': 'f.mp4' },
-        { 'image': 'g.png', 'video': 'g.mp4' },
-        { 'image': 'h.png', 'video': 'h.mp4' },
-        { 'image': 'i.png', 'video': 'i.mp4' },
-        { 'image': 'j.png', 'video': 'j.mp4' },
-        { 'image': 'k.png', 'video': 'k.mp4' },
-        { 'image': 'l.png', 'video': 'l.mp4' },
-        { 'image': 'm.png', 'video': 'm.mp4' },
-        { 'image': 'n.png', 'video': 'n.mp4' },
-        { 'image': 'o.png', 'video': 'o.mp4' },
-        { 'image': 'p.png', 'video': 'p.mp4' },
-        { 'image': 'q.png', 'video': 'q.mp4' },
-        { 'image': 'r.png', 'video': 'r.mp4' },
-        { 'image': 's.png', 'video': 's.mp4' },
-        { 'image': 't.png', 'video': 't.mp4' },
-        { 'image': 'u.png', 'video': 'u.mp4' },
-        { 'image': 'v.png', 'video': 'v.mp4' },
-        { 'image': 'w.png', 'video': 'w.mp4' },
-        { 'image': 'x.png', 'video': 'x.mp4' },
-        { 'image': 'y.png', 'video': 'y.mp4' },
-        { 'image': 'sch.png', 'video': 'sch.mp4' },
-        { 'image': 'ae.png', 'video': 'ae.mp4' },
-        { 'image': 'oe.png', 'video': 'oe.mp4' },
-        { 'image': 'ue.png', 'video': 'ue.mp4' },
-        { 'image': 'sz.png', 'video': 'sz.mp4' },
-    ],
-    'IT': [
-        { 'image': 'festplatte.png', 'video': 'festplatte.mp4' },
-        { 'image': 'bildschirm.png', 'video': 'bildschirm.mp4' },
-        { 'image': 'computer.png', 'video': 'computer.mp4' },
-        { 'image': 'computerspiel.png', 'video': 'computerspiel.mp4' },
-        { 'image': 'email.png', 'video': 'email.mp4' },
-        { 'image': 'computermaus.png', 'video': 'maus_computer.mp4' },
-        { 'image': 'dokumentation.png', 'video': 'dokumentation.mp4' },
-        { 'image': 'firewall.png', 'video': 'firewall.mp4' },
-        { 'image': 'kaffee.png', 'video': 'kaffee.mp4' },
-        { 'image': 'funktion.png', 'video': 'funktion.mp4' },
-        { 'image': 'informatik.png', 'video': 'informatik.mp4' },
-        { 'image': 'integration.png', 'video': 'integration.mp4' },
-        { 'image': 'laptop.png', 'video': 'laptop.mp4' },
-        { 'image': 'netzwerk.png', 'video': 'netzwerk.mp4' },
-        { 'image': 'pizza.png', 'video': 'pizza.mp4' },
-        { 'image': 'projekt.png', 'video': 'projekt.mp4' },
-        { 'image': 'google.png', 'video': 'google.mp4' }
-    ]
-};
 
 class Card {
     constructor(image, text, video, pair, clickCallBack) {
@@ -349,13 +272,13 @@ class Card {
 }
 
 class MemoryGame {
-    constructor(evt) {
-        this.evt = evt
-        this.lvlNum = 0
-        this.info = document.getElementById('game-info')
-        this.levelCtrls = document.getElementById('levels')
-        this.categoryCtrls = document.getElementById('categories')
-        this.currentLvl = null
+    constructor(evt, category) {
+        this.evt = evt;
+        this.lvlNum = 0;
+        this.info = document.getElementById('game-info');
+        this.levelCtrls = document.getElementById('levels');
+        this.categoryCtrls = document.getElementById('categories');
+        this.currentLvl = null;
         this.levelSize = 2; // minimum number of cards
         this.updateCategory(document.getElementById('firstCategory'));
         this.updateSize(document.getElementById('firstLevel'));
@@ -363,7 +286,7 @@ class MemoryGame {
     }
 
     start() {
-        var matches = 2
+        let matches = 2;
         this.currentLvl = new Level(evt, this.levelSize, matches, this.levelCategory, lists[this.levelCategory]);
         this.currentLvl.onwin = function (clicks, prc) {
             this.info.innerHTML = 'Du hast alle Paare mit nur <strong>' + clicks + '</strong> Klicks gefunden.' +
