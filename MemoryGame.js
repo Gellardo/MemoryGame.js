@@ -169,6 +169,29 @@ class Level {
 
 // Possible lists
 let lists = {
+    'DeafIT2020': [
+        { 'video': 'AgilesProjektmanagement.mp4', 'text': 'Agiles Projektmanagement' },
+        { 'video': 'Barrierefreiheit.mp4', 'text': 'Barrierefreiheit' },
+        { 'video': 'Bayern.mp4', 'text': 'Bayern' },
+        { 'video': 'Blockchain.mp4', 'text': 'Blockchain' },
+        { 'video': 'BusinessDevelopment.mp4', 'text': 'Business Development' },
+        { 'video': 'Datenbank.mp4', 'text': 'Datenbank' },
+        { 'video': 'DeafIT2020.mp4', 'text': 'DeafIT 2020' },
+        { 'video': 'Inklusion.mp4', 'text': 'Inklusion' },
+        { 'video': 'Keynote.mp4', 'text': 'Keynote' },
+        { 'video': 'Kommunikation.mp4', 'text': 'Kommunikation' },
+        { 'video': 'Konferenz.mp4', 'text': 'Konferenz' },
+        { 'video': 'KuenstlicheIntelligenz.mp4', 'text': 'Künstliche Intelligenz' },
+        { 'video': 'Muenchen.mp4', 'text': 'München' },
+        { 'video': 'Multimedia.mp4', 'text': 'Multimedia' },
+        { 'video': 'Produktdesign.mp4', 'text': 'Produktdesign' },
+        { 'video': 'Redner.mp4', 'text': 'Redner' },
+        { 'video': 'SoftwareArchitektur.mp4', 'text': 'Software Architektur' },
+        { 'video': 'SoftwareDevelopment.mp4', 'text': 'Software Development' },
+        { 'video': 'Vortrag.mp4', 'text': 'Vortrag' },
+        { 'video': 'WebDesign.mp4', 'text': 'Web Design' },
+        { 'video': 'WebDevelopment.mp4', 'text': 'Web Development' }
+    ],
     'Tiere': [
         { 'image': 'bird.png', 'video': 'bird.mp4' },
         { 'image': 'butterfly.png', 'video': 'butterfly.mp4' },
@@ -374,7 +397,6 @@ class MemoryGame {
     }
 
     updateSize(element, pairs) {
-        console.log(element);
         for (let i = 0; i < this.levelCtrls.children.length; i++) {
             this.levelCtrls.children[i].className = this.levelCtrls.children[i].className.replace('selected', '').trim();
         }
