@@ -209,6 +209,9 @@ div {
 .front .cardText {
     color: black;
     font-size: 15px;
+    line-height: 1.5em;
+    display: inline-block;
+    word-break: break-word;
 }
 
 .front img {
