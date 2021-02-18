@@ -169,7 +169,7 @@ class Level {
 
 // Possible lists
 let lists = {
-    'DeafIT2020': [
+    'DeafIT2021': [
         { 'video': 'AgilesProjektmanagement.mp4', 'text': 'Agiles Projektmanagement' },
         { 'video': 'Barrierefreiheit.mp4', 'text': 'Barrierefreiheit' },
         { 'video': 'Bayern.mp4', 'text': 'Bayern' },
