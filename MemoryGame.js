@@ -159,7 +159,7 @@ class Level {
 
                 window.setTimeout(() => {
                     this.playfield.className = 'play-field win';
-                    this.onwin(this.clicksCnt, Math.round(this.size * 100 / this.clicksCnt));
+                    this.onwin(this.clicksCnt);
                     this.playfieldWrapper.className = '';
                 }, 1500);
             }
@@ -388,9 +388,8 @@ class MemoryGame {
     start() {
         var matches = 2
         this.currentLvl = new Level(evt, this.levelSize, matches, this.levelCategory, lists[this.levelCategory]);
-        this.currentLvl.onwin = function (clicks, prc) {
-            this.info.innerHTML = 'Du hast alle Paare mit nur <strong>' + clicks + '</strong> Klicks gefunden.' +
-                ' Das entspricht einer Effizienz von <strong>' + prc + '%</strong>';
+        this.currentLvl.onwin = function (clicks) {
+            this.info.innerHTML = 'Du hast alle Paare mit nur <strong>' + clicks + '</strong> Klicks gefunden.';
         }.bind(this);
 
         this.info.innerHTML = 'Klicke die Karten an, um <strong>' + matches + 'er</strong> Paare aufzudecken.';
