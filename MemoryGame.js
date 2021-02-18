@@ -415,7 +415,7 @@ class MemoryGame {
         if (newCategory)
             this.levelCategory = newCategory;
         else
-            this.levelCategory = element.textContent;
+            this.levelCategory = element.textContent.split(" ").join("");
         this.start()
     };
 }

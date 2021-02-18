@@ -208,7 +208,7 @@ div {
 
 .front .cardText {
     color: black;
-    font-size: 15px;
+    font-size: 30px;
     line-height: 1.5em;
     display: inline-block;
     word-break: break-word;
@@ -336,8 +336,8 @@ div {
 
 @media (min-width: 1000px) {
     .card {
-        width: calc(100vw * 0.1);
-        height: calc(100vw * 0.1);
+        width: calc(100vw * 0.2);
+        height: calc(100vw * 0.2);
     }
     #playfield-wrapper {
         width: calc(100vw * 0.7);
